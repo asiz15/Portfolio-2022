@@ -1,6 +1,6 @@
 <template>
-  <div class="about  grid grid-cols-4 container mx-auto grid gap-4 pt-9">
-    <ProjectItem v-for="project in Projects" :key="project.id" :project="project"/>
+  <div class="grid grid-cols-4 gap-5 pt-9">
+    <ProjectItem v-for="project in Projects" :project="project" :key="project.id" />
   </div>
 </template>
 <script>

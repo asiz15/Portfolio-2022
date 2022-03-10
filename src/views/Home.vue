@@ -1,18 +1,38 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home container mx-auto pb-9">
+    <Hi />
+    <div class="grid grid-cols-2 mt-5">
+      <Languages />
+      <Libraries />
+    </div>
+    <div class="grid grid-cols-2">
+      <Databases />
+      <Tools />
+    </div>
+    <section class="mt-9 text-left" style="margin-top: 25vh">
+      <h4 class="text-3xl text-white">Projects</h4>
+      <ProjectGrid />
+    </section>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Hi from "../components/Hi.vue";
+import Languages from "../components/Languages.vue";
+import Libraries from "../components/Libraries.vue";
+import Tools from "../components/Tools.vue";
+import Databases from "../components/Databases.vue";
+import ProjectGrid from "../components/ProjectGrid.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    Hi,
+    Languages,
+    Libraries,
+    Tools,
+    Databases,
+    ProjectGrid
+  },
+};
 </script>
