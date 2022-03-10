@@ -1,6 +1,6 @@
 <template>
-  <header class="w-full pt-9">
-    <div class="container mx-auto flex items-center justify-between">
+  <header class="w-full py-5" style="position: fixed; top: 0; background: #16161A;">
+    <div class="w-5/6 mx-auto flex items-center justify-between">
       <div class="flex items-center">
         <div class="avatar rounded-full mr-5">
         <img src="https://avatars.githubusercontent.com/u/13662081?v=4" alt="">

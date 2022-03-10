@@ -1,26 +1,31 @@
 <template>
   <div
     class="
-      bg-white
       shadow-md
       rounded-lg
       max-w-sm
       dark:bg-gray-800 dark:border-gray-700
+      bg-gray-800
+      text-white
+      shadow-2xl
     "
   >
     <router-link :to="{ name: 'Project', params: { id: project.id }}">
-      <img
+      <div style="height: 180px">
+        <img
         v-shared-element:[`thumbnail-${project.id}`]
         class="rounded-t-lg"
-        :src="project.thumbnail"
+        :src="project.thumbnailImg.url || 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.unfe.org%2Fwp-content%2Fuploads%2F2019%2F04%2FSM-placeholder.png&imgrefurl=https%3A%2F%2Fwww.unfe.org%2Fes%2Fjusticeprotection%2Fsm-placeholder-2%2F&tbnid=dTlEDU1qMCZNeM&vet=12ahUKEwjrhPqyk7v2AhWcSbgEHVbDAwgQMygCegUIARCiAQ..i&docid=WuPKqbtyhgOsOM&w=1201&h=601&q=image%20placeholder&ved=2ahUKEwjrhPqyk7v2AhWcSbgEHVbDAwgQMygCegUIARCiAQ'"
         alt=""
+        style='height: 100%; width: 100%; object-fit: cover'
       />
+      </div>
     </router-link>
     <div class="p-5">
       <a href="#">
         <h5
           class="
-            text-gray-900
+            text-white
             font-bold
             text-2xl
             tracking-tight
@@ -31,41 +36,9 @@
           {{ project.title }}
         </h5>
       </a>
-      <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">
-        {{ project.short_desc }}
+      <p class="font-normal text-gray-300 mb-3 dark:text-gray-400">
+        {{ project.shortDescription }}
       </p>
-      <a
-        href="#"
-        class="
-          text-white
-          bg-blue-700
-          hover:bg-blue-800
-          focus:ring-4 focus:ring-blue-300
-          font-medium
-          rounded-lg
-          text-sm
-          px-3
-          py-2
-          text-center
-          inline-flex
-          items-center
-          dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
-        "
-      >
-        Read more
-        <svg
-          class="-mr-1 ml-2 h-4 w-4"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </a>
     </div>
   </div>
 </template>

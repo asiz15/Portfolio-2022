@@ -1,5 +1,5 @@
 <template>
-  <div class="home container mx-auto pb-9">
+  <div class="home container mx-auto pb-9 pt-9 w-5/6">
     <Hi />
     <div class="grid grid-cols-2 mt-5">
       <Languages />
