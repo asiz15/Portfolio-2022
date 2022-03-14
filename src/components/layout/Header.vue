@@ -9,10 +9,10 @@
       </div>
       <nav class="flex justify-self-end text-white">
         <ul class="flex">
-          <li><b>01</b> Me</li>
-          <li><b>02</b>Projects</li>
-          <li><b>03</b>Blog</li>
-          <li><b>04</b>Contact</li>
+          <li class="hover:text-purple-600 hover:font-bold cursor-pointer hover:underline"><b>01</b> Me</li>
+          <li class="hover:text-purple-600 hover:font-bold cursor-pointer hover:underline"><b>02</b>Projects</li>
+          <li class="hover:text-purple-600 hover:font-bold cursor-pointer hover:underline"><b>03</b>Blog</li>
+          <li class="hover:text-purple-600 hover:font-bold cursor-pointer hover:underline"><b>04</b>Contact</li>
         </ul>
       </nav>
     </div>

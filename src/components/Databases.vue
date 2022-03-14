@@ -12,7 +12,7 @@
 .languages-icons-container{
   img{
     margin-right: 15px;
-    width: 45px;
+    width: 30px;
   }
 }
 </style>

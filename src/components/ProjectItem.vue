@@ -1,14 +1,13 @@
 <template>
   <div
     class="
-      shadow-md
       rounded-lg
       max-w-sm
-      dark:bg-gray-800 dark:border-gray-700
-      bg-gray-800
       text-white
       shadow-2xl
+      
     "
+    style="background: #1E2023"
   >
     <router-link :to="{ name: 'Project', params: { id: project.id }}">
       <div style="height: 180px">
@@ -22,10 +21,11 @@
       </div>
     </router-link>
     <div class="p-5">
-      <a href="#">
+      <router-link :to="{ name: 'Project', params: { id: project.id }}">
+        <a href="#">
         <h5
           class="
-            text-white
+            text-purple-400
             font-bold
             text-2xl
             tracking-tight
@@ -39,6 +39,8 @@
       <p class="font-normal text-gray-300 mb-3 dark:text-gray-400">
         {{ project.shortDescription }}
       </p>
+      </router-link>
+      
     </div>
   </div>
 </template>
